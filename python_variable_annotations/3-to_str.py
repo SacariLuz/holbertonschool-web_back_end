@@ -4,7 +4,7 @@ annotated function to_str
 """
 
 
-def to_str(n:float) -> str:
+def to_str(n: float) -> str:
     """
     return
     stringify of ther float
