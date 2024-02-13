@@ -6,10 +6,9 @@ Anotacion add
 
 def add(a: float, b: float) -> float:
     """
-    Args: 
+    Args:
     a' first parameter
     b' second parameter
-
     Return:
     Sum two floats
     """
