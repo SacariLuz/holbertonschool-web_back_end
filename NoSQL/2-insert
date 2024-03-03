@@ -1,0 +1,3 @@
+// Insert a doc in the colletion
+
+db.school.insert({ name : "Holberton school" })
