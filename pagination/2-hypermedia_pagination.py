@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
-""" Hypermedia pagination """
+
+"""
+Hypermedia pagination
+"""
+
 import csv
 from math import ceil
 from typing import List, Tuple, Dict
 
 
 class Server:
-    """Server class to paginate a database of popular baby names."""
+    """
+    Server class to paginate a database of popular baby names.
+    """
     DATA_FILE = "Popular_Baby_Names.csv"
 
     def __init__(self):
@@ -23,7 +29,13 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        """Get the page"""
+        """
+        Gives a slice with the requested pagination
+        Args:
+        page: Number of pages
+        page_size: the length of the returned dataset page
+        Returns: a dictionary containing the following
+        """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
 
@@ -33,7 +45,10 @@ class Server:
         return (pagination[range[0]:range[1]])
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
-        """Range of the page"""
+        """
+        Method that takes the same arguments,
+        and returns a dictionary containing the following key-value pairs.
+        """
 
         data = []
         try:
@@ -60,7 +75,9 @@ class Server:
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
-    """Range of the page"""
+    """
+    Range of the pages
+    """
 
     final_size: int = page * page_size
     start_size: int = final_size - page_size
