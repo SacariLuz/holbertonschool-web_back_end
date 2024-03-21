@@ -8,7 +8,7 @@ It is used by applications to enable client-side scripting. The specification is
 
 Classes are in fact "special functions", and just as you can define function expressions and function declarations, a class can be defined in two ways: a class expression or a class declaration.
 
-### A class element can be characterized by three aspects:
+### A class element can be characterized by three aspects
 
 * Kind
 * Location
