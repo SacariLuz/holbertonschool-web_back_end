@@ -7,14 +7,14 @@ export default class Airport {
   }
 
   get name() {
-	  return this._name;
+    return this._name;
   }
 
   get code() {
-	  return this._code;
+    return this._code;
   }
 
   toString() {
-	  return `Airport code: ${this._code}`;
+    return `Airport code: ${this._code}`;
   }
 }
